@@ -19,7 +19,7 @@ public class NewUserFunc {
     }
 
     @When("Click on Hesap ac button and fill the content")
-    public void clickOnHesapAcButtonAndFillTheContent() {
+    public void clickOnHesapAcButtonAndFillTheContent() throws InterruptedException {
         fc.findAndClick("hesapAc");
         fc.findAndSend("ad","eren");
         fc.findAndSend("soyad","yuksek");
@@ -29,7 +29,8 @@ public class NewUserFunc {
         fc.findAndSend("sifreTekrar","randomPassword12");
         fc.findAndClick("gender");
         fc.selectFromDropDown("il","6");
-        fc.selectFromDropDown("ilce","64");
+        Thread.sleep(1000);
+        fc.selectFromDropDown("ilce","59");
         fc.selectFromDropDown("gun","11");
         fc.selectFromDropDown("ay","2");
         fc.selectFromDropDown("yil","1980");
