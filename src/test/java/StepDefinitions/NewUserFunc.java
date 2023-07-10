@@ -39,6 +39,7 @@ public class NewUserFunc {
         fc.findAndClick("submit");
 
 
+
     }
 
     @Then("New user should be created")
